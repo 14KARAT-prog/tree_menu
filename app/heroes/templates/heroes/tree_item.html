@@ -1,0 +1,10 @@
+<ul>
+    {% for tag in tags %}
+    <li>{{ tag.title }}</li>
+        {% if tag.childrens.exists %}
+            {% with tag.childrens.all as tags %}
+                {% include 'heroes/tree_item.html' %}
+            {% endwith %}
+        {% endif %}
+    {% endfor %}
+</ul>
