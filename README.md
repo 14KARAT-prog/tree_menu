@@ -10,21 +10,19 @@ Tree menu in django
 ## **Сборка и запуск**:
 Для отображения меню при запуске следует сначала создать его и добавить дочерние элементы меню в админ понели Django, Для этого после сборки и запуска приложения необходимо перейти по пути http://127.0.0.1:8000/admin. Сам проект будет находится по ссылке http://127.0.0.1:8000/tree_menu
 
-<html>
-<body>
-<p>git clone https://github.com/14KARAT-prog/tree_menu.git</p>
-<p>cd tree_menu</p>
-<p>pip install virtualenv</p>
-<p>python -m venv venv</p>
-<p>cd venv/Scripts/activate</p>
-<p>pip install -r requirements.txt</p>
-<p>cd app</p>
-<p>python manage.py makemigrations</p>
-<p>python manage.py migrate</p>
-<p>python manage.py createsuperuser</p>
-<p>python manage.py runserver</p>
-</body>
-</html>
+```
+git clone https://github.com/14KARAT-prog/tree_menu.git
+cd tree_menu
+pip install virtualenv
+python -m venv venv
+cd venv/Scripts/activate
+pip install -r requirements.txt
+cd app
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
 
 ## License
 This project is licensed under the terms of the MIT license
